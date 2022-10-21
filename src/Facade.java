@@ -108,7 +108,7 @@ public class Facade {
 	public void displayProducts(Person thePerson) throws FileNotFoundException {
 		Scanner scan = new Scanner(System.in);
 		System.out.println("\nThe Iterator Design Pattern is initiated here....");
-		ProductIterator productIterator = new ProductIterator(thePerson); // CourseIterator class
+		ProductIterator productIterator = new ProductIterator(thePerson);
 		int i = 0;
 		while(productIterator.hasNext()) {
 			System.out.println(i++ + " : "+productIterator.Next());
@@ -120,7 +120,7 @@ public class Facade {
 		while(choice != 2) {
 			System.out.println("Select an option - \n0 : Meat based product menu\n1 : Produced based product menu\n2 : Or you can logout...");
 			choice = scan.nextInt();
-			this.thePerson.showMenu(choice); // Display the menu based on user choice and course level
+			this.thePerson.showMenu(choice);
 		}
 	}
 
