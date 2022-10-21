@@ -1,5 +1,4 @@
 public interface ProductMenu {
-
 	public abstract void showMenu();
 
 	public abstract void showAddButton();
@@ -11,5 +10,9 @@ public interface ProductMenu {
 	public abstract void showLabels();
 
 	public abstract void showComboxes();
+	abstract public void buyerMenu();
+	abstract public void sellerMenu();
+	abstract public void implementOption(int choice);
+
 
 }
